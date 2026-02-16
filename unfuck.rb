@@ -5,21 +5,21 @@
 class Unfuck < Formula
   desc "Config linter for humans — YAML, Dockerfiles, K8s, GitHub Actions, and more"
   homepage "https://unfuck.dev"
-  version "0.11.1"
+  version "0.11.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/elementcreations/unfuck-release/releases/download/v0.11.1/unfuck_0.11.1_darwin_amd64.tar.gz"
-      sha256 "b29eb8f3caf8419f6bd8f891841ffc8992bb4484ca804ce5d7e35b7646655910"
+      url "https://github.com/elementcreations/unfuck-release/releases/download/v0.11.2/unfuck_0.11.2_darwin_amd64.tar.gz"
+      sha256 "2eeaff9c2c5fe670d78508d628cba04cd091f1fbb41bf750358535e40c3dbec8"
 
       def install
         bin.install "unfuck"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/elementcreations/unfuck-release/releases/download/v0.11.1/unfuck_0.11.1_darwin_arm64.tar.gz"
-      sha256 "52bcee8c9defb0613f5e086336e8e3d88dcdd90a7f7b634ec3ceffd2049edc95"
+      url "https://github.com/elementcreations/unfuck-release/releases/download/v0.11.2/unfuck_0.11.2_darwin_arm64.tar.gz"
+      sha256 "5239e379da5e0e9cb7375e7815f3a99e3d91b20159f710e7440110961445a20b"
 
       def install
         bin.install "unfuck"
@@ -29,15 +29,15 @@ class Unfuck < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/elementcreations/unfuck-release/releases/download/v0.11.1/unfuck_0.11.1_linux_amd64.tar.gz"
-      sha256 "beee34b415f15300c7d8813eae66f1e595152a7dcecda7bd5cdb14a09adf403c"
+      url "https://github.com/elementcreations/unfuck-release/releases/download/v0.11.2/unfuck_0.11.2_linux_amd64.tar.gz"
+      sha256 "3875dcd7424296c89a41cd5832e5d106d7a14b1cec9c50547a1130e2cd710d01"
       def install
         bin.install "unfuck"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/elementcreations/unfuck-release/releases/download/v0.11.1/unfuck_0.11.1_linux_arm64.tar.gz"
-      sha256 "0dd4a87d1e991c639d8e1b083dbf10229914b1a211974eb21a16b0f3baa75942"
+      url "https://github.com/elementcreations/unfuck-release/releases/download/v0.11.2/unfuck_0.11.2_linux_arm64.tar.gz"
+      sha256 "6bf01d4a3de35e2e47418d95bd48efbaaadb2d8ff1e73f9fbd0d81cfcf717957"
       def install
         bin.install "unfuck"
       end
